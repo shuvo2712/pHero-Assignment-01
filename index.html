@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pHeo Assignment-01</title>
+    <title>Assignment 01 - pHero</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <section class="navbar">
+      <nav class="navbar">
         <div class="container">
           <div class="logo">LOGO</div>
           <a href="#" class="btn">Sign Up</a>
         </div>
-      </section>
+      </nav>
 
       <section class="banner">
-        <h1>Cool Dark UI Template for Webflow Agencies!</h1>
+        <h1>Cool Dark UI Template for <br> Webflow Agencies!</h1>
         <a href="#" class="btn">Stay Focused</a>
       </section>
     </header>
@@ -30,8 +31,8 @@
               Explore the live preview and imagine your brand in this bold new
               look.
             </h6>
-            <br>
-            <a href="#" class="btn small">Launch Live Preview</a>
+            <br />
+            <a href="#" class="btn">Launch Live Preview</a>
           </div>
 
           <img src="images/wc-mini.png" alt="Webflow Conf 2022" />
@@ -39,56 +40,108 @@
       </section>
 
       <section class="stats">
+        <h2>Joined Thousands of Productive Users</h2>
+
         <div class="container">
           <div class="stat">
             <h3>50K</h3>
-            <p>Active Users</p>
+            <p class="light">Active Users</p>
           </div>
 
           <div class="stat">
             <h3>2M+</h3>
-            <p>Focus Sessions</p>
+            <p class="light">Focus Sessions</p>
           </div>
 
           <div class="stat">
             <h3>95%</h3>
-            <p>Satisfaction Rate</p>
+            <p class="light">Satisfaction Rate</p>
           </div>
         </div>
       </section>
 
-      <section class="testimonials">
+      <section class="feedbacks">
         <h2>What our users say</h2>
         <div class="container">
-          <div class="card">
-            <p>★★★★★</p>
-            <h3>Loved by Designers</h3>
-            <p>This template instantly leveled up our presence.</p>
-            <small>- Rakibul</small>
-          </div>
+          <article class="card">
+            <div>
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+            </div>
+            <br />
 
-          <div class="card">
-            <p>★★★★★</p>
             <h3>Loved by Designers</h3>
             <p>This template instantly leveled up our presence.</p>
-            <small>- Hasan</small>
-          </div>
 
-          <div class="card">
-            <p>★★★★★</p>
+            <div class="user-info">
+              <img src="images/avatar.png" alt="Picture of the user" />
+              <div class="user-details">
+                <small class="light">Rakibul</small>
+                <br />
+                <small class="lighter">01 January 2025</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+            </div>
+            <br />
+
             <h3>Loved by Designers</h3>
             <p>This template instantly leveled up our presence.</p>
-            <small>- Shuvo </small>
-          </div>
+
+            <div class="user-info">
+              <img src="images/avatar.png" alt="Picture of the user" />
+              <div class="user-details">
+                <small class="light">Hasan</small>
+                <br />
+                <small class="lighter">02 February 2025</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+              <img src="images/icon-star.png" alt="Star" />
+            </div>
+            <br />
+
+            <h3>Loved by Designers</h3>
+            <p>This template instantly leveled up our presence.</p>
+
+            <div class="user-info">
+              <img src="images/avatar.png" alt="Picture of the user" />
+              <div class="user-details">
+                <small class="light">Shuvo</small>
+                <br />
+                <small class="lighter">03 March 2025</small>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="promo">
         <h2>Ready to focus better</h2>
-        <h6 class="light">"This template instantly leveled up our presence" - Studio Vertex</h6>
-        <br>
+        <h6 class="light">
+          "This template instantly leveled up our presence" - Studio Vertex
+        </h6>
+        <br />
         <a href="#" class="btn">Get Started Free</a>
-        <br>
+        <br />
         <img src="images/wc-big.png" alt="Promo Image" />
       </section>
 
@@ -97,6 +150,7 @@
           <div class="contact-left">
             <h2>Let's Get in Touch</h2>
           </div>
+
           <div class="contact-right">
             <form>
               <label for="email">Email</label>
@@ -104,7 +158,7 @@
               <label for="name">Name</label>
               <input type="text" placeholder="Full Name" required />
               <label for="message">Message</label>
-              <input type="text" placeholder="write your message..." required />
+              <textarea type="text" placeholder="write your message..." required /></textarea>
               <button type="submit" class="btn">Get in Touch</button>
             </form>
           </div>
@@ -112,16 +166,17 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <h1>Logo</h1>
-      <h5 class="light">
+    <footer>
+      <h2>Logo</h2>
+      <h6 class="light">
         Ready to elevate your online presence?
         <br />
         Contact us today to discuss your project and discover how we can bring
         your vision to life.
-      </h5>
-      <p>
-        <a href="#">Home</a> | <a href="#">About</a> |
+      </h6>
+      <p class="light">
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
         <a href="#">How it works</a> |
         <a href="#">Services</a>
       </p>
